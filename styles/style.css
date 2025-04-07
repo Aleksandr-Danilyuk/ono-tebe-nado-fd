@@ -49,7 +49,7 @@
 }
 
 .address__link {
-  height: 24px;
+  /* Исправлено, убрано фиксированное значение высоты для ссылки */
   text-underline-position: under;
 }
 
@@ -61,6 +61,8 @@
 .cover {
   background-image: url("../images/cover.jpg");
   background-size: cover;
+  /* Исправлено, добавлено центрирование фонового изображения*/
+  background-position: center;
   color: white;
 }
 
@@ -109,18 +111,15 @@
 .cover__description {
   display: flex;
   justify-content: space-between;
-  /*  min-height: 51px; */
   align-items: center;
   padding: 50px;
   margin: -42px 0px 0 0;
 }
 /* текст подзаголовка */
 .cover__description-text {
-  /*  font-family: Raleway;*/
   font-weight: 400;
   font-size: 22px;
   line-height: 28px;
-  /*  letter-spacing: 0%;*/
   text-transform: uppercase;
   word-spacing: 18.7px;
 }
@@ -150,7 +149,8 @@
 
 /* В секциях лоты и об аукционе одинаковые стили заголовков*/
 .section__title {
-  font-family: Raleway;
+  /* Исправлено, добавлено семейство шрифтов*/
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 100%;
@@ -216,7 +216,8 @@
 }
 
 .card__title {
-  font-family: Raleway;
+  /* Исправлено, добавлено семейство шрифтов*/
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 22px;
   line-height: 120%;
@@ -230,7 +231,8 @@
 }
 
 .card__text {
-  font-family: Raleway;
+  /* Исправлено, добавлено семейство шрифтов*/
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   font-size: 20px;
   /*  line-height: 120%;
     font-weight: 400;
@@ -260,7 +262,8 @@
   gap: 24px;
 }
 
-.about__Logo {
+/* Исправлено. Опечатка в наименовании класса */
+.about__logo {
   display: flex;
   width: 240px;
   height: 240px;
@@ -297,7 +300,8 @@
 }
 
 .about__text {
-  font-family: Raleway;
+  /* Исправлено, добавлено семейство шрифтов*/
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
@@ -320,7 +324,8 @@
   justify-content: space-around;
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
-  height: 180px;
+  /* Исправлено. "height: 180px;" заменено на margin */
+  margin-bottom: 82px;
 }
 
 /* Блок адреса */
@@ -342,7 +347,8 @@
 }
 
 .footer__menu-link {
-  font-family: Raleway;
+  /* Исправлено, добавлено семейство шрифтов*/
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 18px;
   text-decoration: none;
