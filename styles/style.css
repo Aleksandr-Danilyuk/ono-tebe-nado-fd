@@ -53,7 +53,7 @@
   text-underline-position: under;
 }
 
-.header__address {
+.address__street {
   padding-left: 1px;
 }
 
@@ -167,6 +167,7 @@
 
 .lots__chain {
   display: flex;
+  position: relative;
   list-style-type: none;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -204,6 +205,14 @@
   height: 100%;
   top: 0;
   left: 0;
+}
+
+/* Исправлено. Картинка на первой карточке не смысловая */
+.card__image-lot-no-foto {
+  background-image: url("../images/card-lot-01.jpg");
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
 }
 
 .card__title {
@@ -295,6 +304,15 @@
   letter-spacing: 0%;
 }
 
+/* Добавлено 2 класса для выравнивания текста вместо тега <br> */
+.about__text-auction {
+  max-width: 690px;
+  white-space: break-spaces;
+}
+
+.about__text-lots {
+  white-space: pre-line;
+}
 /* Подвал грид контейнер */
 
 .footer {
