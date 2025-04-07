@@ -89,7 +89,6 @@
 .aligned-text_center {
   display: block;
   text-align: center;
-  /*   letter-spacing: 0;*/
   margin: 22px 0 21px 30px;
 }
 
@@ -112,8 +111,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px;
-  margin: -42px 0px 0 0;
+  /* Исправлено, убран отрицательный отступ*/
+  padding: 8px 50px 50px 50px;
 }
 /* текст подзаголовка */
 .cover__description-text {
@@ -128,11 +127,7 @@
 .bet-button {
   min-height: 51px;
   min-width: 256px;
-  /* font-weight: 500;*/
   font-size: 22px;
-  /* line-height: 100%;
-    letter-spacing: 0%;
-    text-align: center; */
   text-transform: uppercase;
   background-color: transparent;
   border-style: solid;
@@ -148,6 +143,7 @@
 }
 
 /* В секциях лоты и об аукционе одинаковые стили заголовков*/
+
 .section__title {
   /* Исправлено, добавлено семейство шрифтов*/
   font-family: Raleway, Arial, Helvetica, sans-serif;
@@ -254,12 +250,9 @@
 
 .about {
   display: grid;
-  /* max-width: 1100px; */
-  padding: 0px 24px 180px;
-  grid-template-columns: 334px 1fr;
-  grid-template-rows: 1fr 1fr;
-  align-self: center;
-  gap: 24px;
+  /*  Исправлен отрицательный отступ */
+  padding: 9px 24px 180px;
+  grid-template-columns: 358px 1fr;
 }
 
 /* Исправлено. Опечатка в наименовании класса */
@@ -268,30 +261,31 @@
   width: 240px;
   height: 240px;
   background-color: #000;
-  margin-top: 32px;
+  margin-top: 24px;
+  margin-left: 47px;
   border-radius: 50%;
-  justify-self: center;
+   /* Исправлен отрицательный отступ 
+  justify-self: center;*/
 }
 
 .about__logo-image {
-  grid-row: 1;
   max-height: 114px;
   max-width: 148px;
   align-self: center;
-  margin-left: 47px;
-  margin-top: 3px;
+  margin-left: 46.6px;
+  margin-top: 2px;
 }
 
 .about__title {
-  margin-top: 30px;
-  margin-left: 2px;
+  margin-top: 34px;
+  margin-left: 1px;
   align-self: center;
 }
 
+/* Исправлен, отрицательный отступ */
 .about__column {
   display: flex;
-  position: relative;
-  margin-top: -27px;
+  margin-top: 8px;
   margin-left: 1px;
   flex-direction: column;
   gap: 24px;
@@ -302,30 +296,28 @@
 .about__text {
   /* Исправлено, добавлено семейство шрифтов*/
   font-family: Raleway, Arial, Helvetica, sans-serif;
-  font-weight: 400;
   font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0%;
 }
 
 /* Добавлено 2 класса для выравнивания текста вместо тега <br> */
 .about__text-auction {
-  max-width: 690px;
   white-space: break-spaces;
 }
 
 .about__text-lots {
   white-space: pre-line;
 }
+
 /* Подвал грид контейнер */
 
 .footer {
   display: grid;
-  justify-content: space-around;
-  justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
   /* Исправлено. "height: 180px;" заменено на margin */
-  margin-bottom: 82px;
+  margin-bottom: 80px;
+  margin-top: 1px;
+
 }
 
 /* Блок адреса */
@@ -349,7 +341,6 @@
 .footer__menu-link {
   /* Исправлено, добавлено семейство шрифтов*/
   font-family: Raleway, Arial, Helvetica, sans-serif;
-  font-weight: 400;
   font-size: 18px;
   text-decoration: none;
   border-bottom: 1px solid #000;
