@@ -40,7 +40,7 @@
   display: flex;
   flex-direction: column;
   width: 240px;
-  height: 98px;
+    /* Исправлено, убрано фиксированное значение высоты */
   line-height: 24.3px;
   font-size: 18px;
   justify-self: end;
@@ -193,7 +193,7 @@
   color: #fff;
 }
 
-/* Картинка на карточках смысловая поэтому через тег img */
+/* Класс Для карточек с картинками лотов для тега img
 .card__image-lot {
   object-fit: cover;
   position: absolute;
@@ -201,11 +201,27 @@
   height: 100%;
   top: 0;
   left: 0;
+} */
+
+/* Исправлено. Класс для карточки с фильмом */
+.card_type_film {
+  background-image: url("../images/card-lot-01.jpg");
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
 }
 
-/* Исправлено. Картинка на первой карточке не смысловая */
-.card__image-lot-no-foto {
-  background-image: url("../images/card-lot-01.jpg");
+/* Исправлено. Класс для карточки с книгой */
+.card_type_book {
+  background-image: url("../images/card-lot-02.jpg");
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* Исправлено. Класс для карточки с картиной */
+.card_type_picture {
+  background-image: url("../images/card-lot-03.jpg");
   height: 100%;
   background-position: center center;
   background-size: cover;
@@ -317,7 +333,6 @@
   /* Исправлено. "height: 180px;" заменено на margin */
   margin-bottom: 80px;
   margin-top: 1px;
-
 }
 
 /* Блок адреса */
