@@ -204,27 +204,24 @@
 } */
 
 /* Исправлено. Класс для карточки с фильмом */
-.card_type_film {
-  background-image: url("../images/card-lot-01.jpg");
+.card_type_image {
   height: 100%;
   background-position: center center;
   background-size: cover;
+}
+
+.card_type_image-film {
+  background-image: url("../images/card-lot-01.jpg");
 }
 
 /* Исправлено. Класс для карточки с книгой */
-.card_type_book {
+.card_type_image-book {
   background-image: url("../images/card-lot-02.jpg");
-  height: 100%;
-  background-position: center center;
-  background-size: cover;
 }
 
 /* Исправлено. Класс для карточки с картиной */
-.card_type_picture {
+.card_type_image-picture {
   background-image: url("../images/card-lot-03.jpg");
-  height: 100%;
-  background-position: center center;
-  background-size: cover;
 }
 
 .card__title {
